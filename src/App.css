@@ -13,9 +13,9 @@
   }
 }
 
-.App-header {
+.App-header, footer {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+.eventCard {
+  height: 28rem;
+  overflow: scroll;
+}
+
+.eventCard h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
 }
